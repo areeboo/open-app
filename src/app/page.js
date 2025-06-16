@@ -1,10 +1,17 @@
-import Counter from './counter';
+"use client";
+
+import Link from 'next/link';
+import Counter from './components/counter';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center gap-6 p-6">
-      <h1 className="text-4xl font-bold text-primary">My Counter App</h1>
-      <Counter/>
-    </main>
+    <div>
+      <Counter />
+      <div className="mt-8 text-center">
+        <Link href="/next-page" className="text-blue-500 hover:underline">
+          Go to Next Page
+        </Link>
+      </div>
+    </div>
   );
 }
