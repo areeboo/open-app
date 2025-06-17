@@ -1,6 +1,7 @@
 "use client";
 
 import TestModalButton from '../components/testmodalbutton';
+import Link from 'next/link';
 
 export default function NextPage() {
   return (
@@ -25,6 +26,7 @@ export default function NextPage() {
             <TestModalButton />
           </div>
         </div>
+        <Link href="/">Go back to main page</Link>
       </div>
   
       <dialog id="test_modal" className="modal">
